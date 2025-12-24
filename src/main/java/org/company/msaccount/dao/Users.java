@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.company.msaccount.enums.ActiveStatus;
 
-import javax.annotation.Nullable;
+import java.math.BigDecimal;
+
 
 @Entity
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)

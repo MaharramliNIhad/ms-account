@@ -2,6 +2,8 @@ package org.company.msaccount.model;
 
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @ToString
@@ -9,8 +11,8 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserResponse {
-    private String name;
-    private String surname;
-    private String email;
+public class CardCreatedEvent {
+    String cardHolderName;
+    BigDecimal balance;
+
 }

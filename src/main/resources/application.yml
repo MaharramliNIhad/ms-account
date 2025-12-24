@@ -2,6 +2,12 @@ spring:
   application:
     name: ms-account
 
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+
   datasource:
     url: jdbc:postgresql://localhost:5433/todoappdb
     username: postgres
@@ -24,4 +30,4 @@ spring:
     change-log: classpath:/db/changelog/master.yml
 
 server:
-  port: 8080
+  port: 8081
